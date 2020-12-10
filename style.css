@@ -1,0 +1,30 @@
+/*font*/
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: #6886c5;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+button {
+    color: #ffe0ac;
+}
+
+img {
+    border-radius: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+video {
+    align-items: top;
+}

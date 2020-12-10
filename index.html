@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<header>
+    <link rel="stylesheet" href="style.css">
+<link rel="javascript" href="js.js">
+</header>
+<body>
+
+    <h1>FizzBuzz</h1>
+  
+
+<!--line where text will appear-->
+<p id=demo1></p>
+
+<script>
+    //variables used
+    var count = 0;  //current number
+    var mystring;   //where # go
+    var wrote;  //if # needs to be written
+    
+    for(count=0; count<100; count++) {  //start of loop
+        wrote=0;    //assume # needs to be printed
+        mystring += " , ";    //adds spaces
+        if(!(count % 3)) {  //if multiple of 3
+            mystring += "fizz" ;    //write fizz
+            wrote=1;    //no # needed
+        }
+
+        if(!(count % 5)) {  //if multiple of 5
+            mystring += "buzz" ;    //write buzz
+            wrote=1;    //no # needed
+        }
+
+        if (wrote!=1) { //if # needed
+            mystring += count;  //write #
+        }
+    
+    }
+    document.getElementById("demo1").innerHTML = mystring; //at end of loop print string
+
+  
+ </script>
+
+</body>
+</html>
